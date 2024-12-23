@@ -1,0 +1,7 @@
+101,Single,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,55.0
+102,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,130.0
+103,Single,Air Conditioning;Balcony;TV,Occupied,55.0
+104,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,150.0
+105,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,150.0
+106,Queen,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,250.0
+107,Suite,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,200.0

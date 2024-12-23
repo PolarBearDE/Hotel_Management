@@ -1,0 +1,3 @@
+Polarakos,Papaki2002,spyrosmpalitsas@gmail.com,Administrator;Manager
+Admin,123,admin123@gmail.com,Administrator
+PolarBearDE,polarakos,polarbear@gmail.com,Employee

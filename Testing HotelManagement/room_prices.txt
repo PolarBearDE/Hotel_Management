@@ -1,0 +1,5 @@
+Triple=150.0
+Suite=200.0
+Single=55.0
+Queen=250.0
+Double=130.0
