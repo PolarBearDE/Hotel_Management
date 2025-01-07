@@ -8,3 +8,4 @@ testing name,testing sourname,testi id,test country,testi street,107,2025-01-10,
 testopoulos,testing,testid,testidi,testtesttts,109;116;117,2025-01-10,2025-01-20,3900.0
 lialios,abramidis,ai121221,georgia,kevlak 21,118,2025-01-11,2025-01-14,390.0
 test,test,test,test,test,118,2025-01-10,2025-01-20,1300.0
+test,test,test,test,test,119;120;121,2025-01-10,2025-01-15,1950.0
