@@ -1,0 +1,45 @@
+Welcome to PolarSoft Technologies by Mpalitsas
+==========================READ ME!!! READ CAREFULLY THE INSTRUCTIONS!!!!==========================
+PROJECT Hotel Management
+
+In case your jar application does run and got the error:
+
+Java Virtual Machine Launcher
+
+A Java Exeption has occured.
+
+Click OK and follow the steps bellow to open the project:
+
+===================================================================================================
+EN
+First i recomend you to install Intellij IDEA Community edition
+Its fast reliable and a trustworthy application-tool to have for coding projects of all kinds
+
+How to install Intellij IDEAD Community edition:
+
+1. go to this link:https://www.jetbrains.com/idea/download/?section=windows
+2. Scroll down a little bit until you find Intellij IDEA Community Edition click on download
+3. Follow the download instructions of the application 
+
+How to run the project Hotel Management app:
+
+1. First to have the latest version of the app i recomend you to go to my github link: https://github.com/PolarBearDE/Hotel_Management
+2. Click on <> Code (it should be a Green Button) and downloadd the ZIP file
+3. it should download a ZIP or RAR file called Hotel_Management-main click it and drag the file outside and place it outside in your desktop 
+4. Now that you have the folder of Hotel_Management-main you should see a Testing HotelManagement file folder
+   remember it we will need it to open it from the Intellij app!
+5. now open your intellij IDEA Community edition app and in the left Corner above the app there should be something called File click it
+   and then click on Open 
+6. After clicking on Open you should click the Applications folder that is called Hotel_Management-main (the folder that you unziped before)
+   and click on it it should now open the project 
+7. To run the project simply click the greeen Start Arron that is in the up right corner of Intellij app otherwise press shift+f10
+8. Now it should run properly with intellij and you can explore the code and the app itself you can join as an administator by logging into the app
+   the Username is Admin and the password is 123
+9. You are finally in the project :) 
+
+If you have problems with one of the steps you are free to contact me from my university email: spbalit@cs.duth.gr (usually respond in about 1-3 days)
+===================================================================================================
+University email: spbalit@cs.duth.gr (usually respond in about 1-3 days)
+more personal informations about me and project i made contact me via the LinkedIn :https://www.linkedin.com/in/spyros-mpalitsas-502bb2306/
+**Not all projects all public in github for personal reasons
+
