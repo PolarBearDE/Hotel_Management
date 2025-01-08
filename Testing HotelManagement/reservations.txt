@@ -1,11 +1,10 @@
-Spyros,Mpalitsas,test,test,sialvera20,102,2024-12-28,2024-12-30,234.0
-Spyros,Mpalitsas,testtt,testtt,sialvera20,103,2024-12-28,2024-12-30,110.0
+Spyros,Mpalitsas,eo123421,Geermany,sialvera 20,102,2024-12-28,2024-12-30,234.0
+Spyros,Mpalitsas,eo123421,Geermany,sialvera 20,103,2024-12-28,2024-12-30,110.0
 Kostas,Mpalitsas,a01232123,Greece,sialvera20,106,2025-01-06,2025-01-10,1000.0
 Aleksandros,Mpalitsas,ao122121,Germany,Hauptstrasse 4,108,2025-01-6,2025-01-15,1170.0
 Aleksandros,Mpalitsas,ao122121,Germany,Hauptstrasse 4,110;111;112;113;114;115,2025-01-6,2025-01-15,7020.0
 Kostas,Mpalitsas,ao12312322131,Greece,Sialvera 22 ,127;128;129;130;131;132,2025-01-10,2025-01-15,3900.0
 testing name,testing sourname,testi id,test country,testi street,107,2025-01-10,2025-01-12,400.0
-testopoulos,testing,testid,testidi,testtesttts,109;116;117,2025-01-10,2025-01-20,3900.0
-lialios,abramidis,ai121221,georgia,kevlak 21,118,2025-01-11,2025-01-14,390.0
-test,test,test,test,test,118,2025-01-10,2025-01-20,1300.0
-test,test,test,test,test,119;120;121,2025-01-10,2025-01-15,1950.0
+lialios,abramidis,ai121221,Georgia,kevlak 21,118,2025-01-11,2025-01-14,390.0
+Petros,Testing,testing ID,Greece,Sialvera 11,101,2025-01-11,2025-01-22,660.0
+Spyros,Test,Test 12,Greece,sialvera 12,102;103;104;107,2025-01-20,2025-01-26,3816.0

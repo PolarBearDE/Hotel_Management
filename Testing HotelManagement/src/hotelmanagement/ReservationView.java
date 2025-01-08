@@ -18,7 +18,7 @@ public class ReservationView extends JFrame {
     private List<Room> rooms;
 
     public ReservationView() {
-        this(new ArrayList<>()); // Default constructor calls the one with the list
+        this(new ArrayList<>());
     }
 
     public ReservationView(List<Room> rooms) {
@@ -28,10 +28,11 @@ public class ReservationView extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(800, 600);
 
-        // Main panel for form fields
+        // Main panel
         JPanel formPanel = new JPanel(new GridLayout(14, 2, 10, 10)); // Increased rows for the number of fields
+        formPanel.setBackground(new Color(245, 245, 245)); // Light background color
 
-        // Insert fields
+        // Insert
         formPanel.add(new JLabel("Available Rooms:"));
         roomSelectionList = new JList<>(
                 rooms.stream()
@@ -43,45 +44,61 @@ public class ReservationView extends JFrame {
 
         formPanel.add(new JLabel("Customer Name:"));
         customerNameField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(customerNameField);
 
         formPanel.add(new JLabel("Customer Surname:"));
         customerSurnameField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(customerSurnameField);
 
         formPanel.add(new JLabel("Customer ID:"));
         customerIDField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(customerIDField);
 
         formPanel.add(new JLabel("Customer Country:"));
         customerCountryField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(customerCountryField);
 
         formPanel.add(new JLabel("Customer Address (Street):"));
         customerAddressField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(customerAddressField);
 
         formPanel.add(new JLabel("From Date (YYYY-MM-DD):"));
         fromDateField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(fromDateField);
 
         formPanel.add(new JLabel("To Date (YYYY-MM-DD):"));
         toDateField = new JTextField();
+        customerNameField.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(toDateField);
 
         formPanel.add(new JLabel("Total Price:"));
         totalPriceLabel = new JLabel("0.0");
+        totalPriceLabel.setFont(new Font("Arial", Font.BOLD, 14));
+        totalPriceLabel.setForeground(new Color(0, 128, 0)); // Green color for total price
         formPanel.add(totalPriceLabel);
 
         reserveButton = new JButton("Reserve Room");
+        reserveButton.setFont(new Font("Arial", Font.BOLD, 14));
+        reserveButton.setBackground(new Color(70, 130, 180));
+        reserveButton.setForeground(Color.WHITE);
         reserveButton.addActionListener(e -> reserveRoom());
         formPanel.add(reserveButton);
 
         groupReserveButton = new JButton("Reserve Group");
+        reserveButton.setFont(new Font("Arial", Font.BOLD, 14));
+        reserveButton.setBackground(new Color(203, 110, 28));
+        reserveButton.setForeground(Color.WHITE);
         groupReserveButton.addActionListener(e -> reserveGroup());
         formPanel.add(groupReserveButton);
 
         creditCardCheckbox = new JCheckBox("Use Credit Card");
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         creditCardCheckbox.addActionListener(e -> toggleCreditCardFields());
         formPanel.add(creditCardCheckbox);
 
@@ -89,43 +106,51 @@ public class ReservationView extends JFrame {
         formPanel.add(new JLabel("Cardholder First Name:"));
         cardFirstNameField = new JTextField();
         cardFirstNameField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardFirstNameField);
 
         formPanel.add(new JLabel("Cardholder Last Name:"));
         cardLastNameField = new JTextField();
         cardLastNameField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardLastNameField);
 
         formPanel.add(new JLabel("Card Number:"));
         cardNumberField = new JTextField();
         cardNumberField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardNumberField);
 
         formPanel.add(new JLabel("Expiration Month:"));
         cardMonthField = new JTextField();
         cardMonthField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardMonthField);
 
         formPanel.add(new JLabel("Expiration Year:"));
         cardYearField = new JTextField();
         cardYearField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardYearField);
 
         formPanel.add(new JLabel("CVC:"));
         cardCVCField = new JTextField();
         cardCVCField.setEnabled(false);
+        creditCardCheckbox.setFont(new Font("Arial", Font.PLAIN, 14));
         formPanel.add(cardCVCField);
 
         // Panic button
         panicButton = new JButton("Panic Button");
+        panicButton.setFont(new Font("Arial", Font.BOLD, 14));
+        panicButton.setBackground(Color.RED);
+        panicButton.setForeground(Color.WHITE);
         panicButton.addActionListener(e -> showPanicMessage());
         formPanel.add(panicButton);
 
-        // Contact label
         JLabel contactLabel = new JLabel("Having trouble? Contact Hotel Polar:\nphone: 6912345678 email: PolarHotel@gmail.com");
+        contactLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         formPanel.add(contactLabel);
 
-        // Add the panel to the JFrame
         add(formPanel, BorderLayout.CENTER);
         setVisible(true);
     }
@@ -176,7 +201,6 @@ public class ReservationView extends JFrame {
             double totalPrice = calculateTotalPrice(String.join(";", roomNumbers), fromDate, toDate, true);
             double prepayment = totalPrice * 0.25;
 
-            // Εμφάνιση μηνύματος για την προκαταβολή
             JOptionPane.showMessageDialog(this, String.format(
                     "The group reservation requires a prepayment of 25%%.\nPrepayment amount: %.2f", prepayment));
         }
@@ -262,7 +286,7 @@ public class ReservationView extends JFrame {
 
         // Check if any date is during high-demand periods
         if (isHighDemand(fromDate) || isHighDemand(toDate)) {
-            totalPrice *= 1.2; // Add 20% surcharge
+            totalPrice *= 1.2;
         }
 
         return totalPrice;

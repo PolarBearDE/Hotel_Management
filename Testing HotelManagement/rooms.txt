@@ -1,10 +1,10 @@
 101,Single,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,55.00
-102,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,130.00
-103,Single,Air Conditioning;Balcony;TV,Available,55.00
+102,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,130.00
+103,Single,Air Conditioning;Balcony;TV,Occupied,55.00
 104,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,150.00
 105,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,150.00
 106,Queen,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,250.00
-107,Suite,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,200.00
+107,Suite,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,200.00
 108,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,130.00
 109,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,130.00
 110,Double,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Occupied,130.00
@@ -116,3 +116,4 @@
 216,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,150.00
 217,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,150.00
 218,Triple,Fridge;Air Conditioning;Balcony;Hairdryer;TV,Available,150.00
+266,Single,Fridge;Air Conditioning;Hairdryer;TV,Available,150.00
